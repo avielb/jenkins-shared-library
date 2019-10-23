@@ -6,9 +6,9 @@ def call(functionToCall){
 	}
 }
 def aviel(){
-	echo "aviel"
+	echo "this is from aviel function"
 }
 
 def moshe(){
-	echo "moshe"
+	echo "this is from moshe function"
 }
