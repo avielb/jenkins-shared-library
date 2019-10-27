@@ -1,5 +1,5 @@
 def call(String podLabel, code) {
-	containerTemplate(name: 'maven', image: 'maven:3.6.0-jdk-8-alpine', ttyEnabled: true, command: 'cat') {
+	podTemplate(containers: [containerTemplate(name: 'centos', image: 'centos:7', ttyEnabled: true, command: '/bin/bash')]) {
 		code()
 	}
 }
